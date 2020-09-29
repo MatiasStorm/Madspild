@@ -6,19 +6,38 @@
     <link rel="stylesheet" type="text/css" href="/main.css">
     <link rel="stylesheet" type="text/css" href="/topPart.css">
     <link rel="stylesheet" type="text/css" href="/footer.css">
+    <link rel="stylesheet" type="text/css" href="/foodPlanner.css">
 
 
 </head>
 <body>
 <div th:replace="/includes/topPart :: topPart"></div>
+<form th:action="@{/printFoodPlan}" method="post">
+
+    <div th:each="day : ${days}" class="food-planner-input">
+        <p th:text="${day}"></p>
+        <div class="center">
+            <select th:name="${day}">
+                <option th:each="recipe : ${recipes}" th:value="${recipe.name}" th:text="${recipe.name}"></option>
+            </select>
+        </div>
+    </div>
+
+    <div class="center m1">
+        <input class="printButton" type="submit" value="Print your personalized food plan"/>
+    </div>
+
+</form>
 
 
-
-
-
-
-
-
+<!--<div th:each="recipe : ${recipes}">-->
+<!--    <p th:text="${recipe.name}"></p>-->
+<!--    <div th:each="ingredient : ${recipe.ingredients}">-->
+<!--        <p th:text="${ingredient.name}"></p>-->
+<!--        <p th:text="${ingredient.quantity}"></p>-->
+<!--        <p th:text="${ingredient.unit}"></p>-->
+<!--    </div>-->
+<!--</div>-->
 
 
 <footer th:replace="/includes/footer :: footer"></footer>

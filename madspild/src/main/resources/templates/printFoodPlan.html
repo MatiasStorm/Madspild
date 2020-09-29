@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Print food plan</title>
+    <link rel="stylesheet" type="text/css" href="/main.css">
+    <link rel="stylesheet" type="text/css" href="/topPart.css">
+    <link rel="stylesheet" type="text/css" href="/footer.css">
+</head>
+<body>
+
+
+<div th:class="'test'+${iter.index}" th:each="day,iter : ${days}">
+    <h3 th:text="${day}"></h3>
+    <div>
+        <p th:text="${recipes[iter.index].name}"></p>
+        <ul>
+            <li th:each="ingredient : ${recipes[iter.index].ingredients}" th:text="${ingredient.name + ' ' + ingredient.quantity + ' ' + ingredient.unit}">
+
+            </li>
+        </ul>
+    </div>
+
+
+
+</div>
+
+</body>
+</html>
