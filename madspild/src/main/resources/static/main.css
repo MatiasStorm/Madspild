@@ -16,33 +16,41 @@ body{
 }
 
 .test0 {
-    text-align: left;
-    position: relative;
-    top: 10vh;
+  transform: translate(2vh,2vh);
+
 
 }
 
 .test1 {
-    text-align: center;
-    position: relative;
-    top: 10vh;
+   transform: translate(20vh,2vh);
+
 
 }
 .test2 {
-    text-align: right;
+
     position: relative;
     top: 10vh;
 }
 .test3 {
-
+    position: relative;
+    top: 10vh;
 }
+
 .test4 {
 
+    position: relative;
+    top: 10vh;
 }
+
 
 .test5 {
 
+    position: relative;
+    top: 10vh;
+
 }
 .test6 {
+    position: relative;
+    top: 10vh;
 
 }

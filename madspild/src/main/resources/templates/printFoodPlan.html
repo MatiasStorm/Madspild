@@ -10,8 +10,8 @@
 </head>
 <body>
 
-
-<div th:class="'test'+${iter.index}" th:each="day,iter : ${days}">
+<div style="display: flex";>
+<div th:each="day,iter : ${firstHalfWeek}">
     <h3 th:text="${day}"></h3>
     <div>
         <p th:text="${recipes[iter.index].name}"></p>
@@ -21,10 +21,22 @@
             </li>
         </ul>
     </div>
-
-
-
 </div>
+</div>
+<div style="display: flex";>
+    <div th:each="day,iter : ${lastHalfWeek}">
+        <h3 th:text="${day}"></h3>
+        <div>
+            <p th:text="${recipes[iter.index+3].name}"></p>
+            <ul>
+                <li th:each="ingredient : ${recipes[iter.index+3].ingredients}" th:text="${ingredient.name + ' ' + ingredient.quantity + ' ' + ingredient.unit}">
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
 
 </body>
 </html>

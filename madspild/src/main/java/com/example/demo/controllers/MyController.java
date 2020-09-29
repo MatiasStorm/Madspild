@@ -9,11 +9,14 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 @Controller
 public class MyController {
     Recipes recipes = new Recipes();
-    String[] days = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
+    ArrayList<String> days = new ArrayList(
+            Arrays.asList("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")
+    );
 
     @GetMapping("/")
     public String index(){
@@ -38,7 +41,8 @@ public class MyController {
             selectedRecipes.add(recipe);
         }
         model.addAttribute("recipes", selectedRecipes);
-        model.addAttribute("days", days);
+        model.addAttribute("firstHalfWeek", days.subList(0, 4));
+        model.addAttribute("lastHalfWeek", days.subList(4,7));
         return "printFoodPlan";
     }
 
