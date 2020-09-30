@@ -50,5 +50,16 @@ public class MyController {
         return "printFoodPlan";
     }
 
+    @GetMapping("/foodwaste")
+    public String foodwaste(){
+        return "foodwaste";
+
+    }
+    @GetMapping("/organisation")
+    public String organisation(){
+        return "organisation";
+
+    }
+
 
 }
