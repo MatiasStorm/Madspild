@@ -107,3 +107,7 @@ hr{
     max-height: 9vh;
     box-shadow: 0px 0px 15px grey;
 }
+
+.alignCenter{
+    text-align: center;
+}
