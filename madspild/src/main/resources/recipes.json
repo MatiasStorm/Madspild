@@ -29,6 +29,66 @@
                     "unit": "gram"
                 }
             ]
+        },
+        {
+            "name": "Pizza",
+            "ingredients": [
+                {
+                    "name": "Cheese",
+                    "quantity": 500,
+                    "unit": "gram"
+                },
+                {
+                    "name": "Flour",
+                    "quantity": 500,
+                    "unit": "gram"
+                },
+                {
+                    "name": "Onion",
+                    "quantity": 2,
+                    "unit": "pieces"
+                },
+                {
+                    "name": "Copped tomatoes",
+                    "quantity": 500,
+                    "unit": "gram"
+                },
+                {
+                    "name": "Carrots",
+                    "quantity": 200,
+                    "unit": "gram"
+                },
+                {
+                    "name": "Cucumber",
+                    "quantity": 200,
+                    "unit": "gram"
+                }
+            ]
+        },
+        {
+            "name": "Pie",
+            "ingredients": [
+                {
+                    "name": "Cheese",
+                    "quantity": 500,
+                    "unit": "gram"
+                },
+                {
+                    "name": "Copped tomatoes",
+                    "quantity": 500,
+                    "unit": "gram"
+                },
+                {
+                    "name": "Carrots",
+                    "quantity": 200,
+                    "unit": "gram"
+                },
+                {
+                    "name": "Cucumber",
+                    "quantity": 200,
+                    "unit": "gram"
+                }
+            ]
         }
     ]
 }
