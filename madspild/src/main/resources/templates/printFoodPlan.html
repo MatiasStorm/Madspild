@@ -7,35 +7,47 @@
     <link rel="stylesheet" type="text/css" href="/main.css">
     <link rel="stylesheet" type="text/css" href="/topPart.css">
     <link rel="stylesheet" type="text/css" href="/footer.css">
+    <link rel="stylesheet" type="text/css" href="/printFoodPlan.css">
 </head>
 <body>
 
-<div style="display: flex";>
-<div th:each="day,iter : ${firstHalfWeek}">
-    <h3 th:text="${day}"></h3>
-    <div>
-        <p th:text="${recipes[iter.index].name}"></p>
-        <ul>
-            <li th:each="ingredient : ${recipes[iter.index].ingredients}" th:text="${ingredient.name + ' ' + ingredient.quantity + ' ' + ingredient.unit}">
-
-            </li>
-        </ul>
-    </div>
-</div>
-</div>
-<div style="display: flex";>
-    <div th:each="day,iter : ${lastHalfWeek}">
+<div style="display: flex" class="centerText" ;>
+    <div class="m1" th:each="day,iter : ${firstHalfWeek}">
         <h3 th:text="${day}"></h3>
-        <div>
-            <p th:text="${recipes[iter.index+3].name}"></p>
+        <div class="addBorderDiv">
+            <p class="recipeName" th:text="${recipes[iter.index].name}"></p>
             <ul>
-                <li th:each="ingredient : ${recipes[iter.index+3].ingredients}" th:text="${ingredient.name + ' ' + ingredient.quantity + ' ' + ingredient.unit}">
+                <li class="recipeIngredient" th:each="ingredient : ${recipes[iter.index].ingredients}"
+                    th:text="${ingredient.name + ' ' + ingredient.quantity + ' ' + ingredient.unit}">
 
                 </li>
             </ul>
         </div>
     </div>
 </div>
+<div style="display: flex" class="centerText" ;>
+    <div class="m1" th:each="day,iter : ${lastHalfWeek}">
+        <h3 th:text="${day}"></h3>
+        <div class="addBorderDiv">
+            <p class="recipeName" th:text="${recipes[iter.index+3].name}"></p>
+            <ul>
+                <li class="recipeIngredient" th:each="ingredient : ${recipes[iter.index+3].ingredients}"
+                    th:text="${ingredient.name + ' ' + ingredient.quantity + ' ' + ingredient.unit}">
+
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="m1">
+        <h3>
+            Notes
+        </h3>
+        <div class="noteBorder">
+
+        </div>
+    </div>
+</div>
+
 
 
 </body>
