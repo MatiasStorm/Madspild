@@ -11,17 +11,48 @@
 </head>
 <body>
 <div th:replace="/includes/topPart :: topPart"></div>
-<div>
-    <h3>Hvad er madspild?</h3>
-    <p>bla bla bla</p>
+<h2 class="indexHeaders">Hvad er madspild?</h2>
+<div class="indexBoxes">
+    <div>
+        <p>Hver dag bliver der smidt næsten 2.000 tons fødevarer ud i Danmark</p>
+        <p>Dette betyder at der årligt bliver smidt 700.000 tons fødevare ud. </p>
+        <p>Af dette tal er det samlede madspild fra husholdningerne på 261.000 tons per år.</p>
+    </div>
+    <div>
+        <img class="indexSplitImage"  src="/images/indexSplit.png"/>
+    </div>
 </div>
-<div>
-    <h3>Hvad gør vi?</h3>
-    <p>Info om madplan, og apps</p>
+
+
+<h2 class="indexHeaders">Hvad gør vi?</h2>
+<div class="indexBoxes">
+    <div>
+        <p>Organisationen Danmark mod Madspild vil gå forrest i kampen om en bedre og mere bæredygtig fremtid for hele
+            Danmark</p>
+        <p>Vi fokuserer vores indsats mod det massive madspild i husholdningen</p>
+        <p>Dette vil spare den enkelte dansker penge, hjælpe samfundet med en stor logistisk problematik </p>
+            <p>og miljøet for
+            den kæmpe unødvendige belastning gennem overproduktion af madvare</p>
+        <p>Prøv vores <a href="/foodPlanner"> madplan</a> med indbyggede opskrifter for, at du kan hjælpe med at holde
+            dit eget madspild nede</p>
+    </div>
+    <div>
+        <img class="indexSplitImage" src="/images/indexSplitTwo.png"/>
+    </div>
 </div>
-<div>
-    <h3>Tips og trix til apps</h3>
-    <p>Links til fx to good to go, netto osv...</p>
+
+
+<h3 class="samarbejdsPartnere">Samarbejdspartnere</h3>
+<div class="samarbejdsPartnere">
+    <div>
+        <div>
+            <a href="https://toogoodtogo.dk/da"> <img class="samarbejdsPartnereImage"
+                                                      src="/images/tooGoodToGo.png"/></a>
+
+            <a href="https://netto.dk/ansvar/madspild/"><img class="samarbejdsPartnereImage"
+                                                             src="/images/madSkalSpises.png"/></a>
+        </div>
+    </div>
 </div>
 <footer th:replace="/includes/footer :: footer"></footer>
 </body>
