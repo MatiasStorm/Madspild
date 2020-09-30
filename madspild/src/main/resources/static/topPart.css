@@ -38,10 +38,12 @@
 }
 
 #topPartText {
-    font-size: 10vw;
+    width: 100%;
+    text-align: center;
+    font-size: 6vw;
     color: antiquewhite;
     position: absolute;
-    top: 7vh;
+    top: 5vh;
     left: 50%;
     transform: translate(-50%, -50%);
     text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
