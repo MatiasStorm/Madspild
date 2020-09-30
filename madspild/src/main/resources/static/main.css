@@ -17,45 +17,6 @@ body{
     display: flex;
 }
 
-.test0 {
-  transform: translate(2vh,2vh);
-
-
-}
-
-.test1 {
-   transform: translate(20vh,2vh);
-
-
-}
-.test2 {
-
-    position: relative;
-    top: 10vh;
-}
-.test3 {
-    position: relative;
-    top: 10vh;
-}
-
-.test4 {
-
-    position: relative;
-    top: 10vh;
-}
-
-
-.test5 {
-
-    position: relative;
-    top: 10vh;
-
-}
-.test6 {
-    position: relative;
-    top: 10vh;
-
-}
 
 .indexBoxes{
 

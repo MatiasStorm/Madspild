@@ -11,44 +11,26 @@
 </head>
 <body>
 
-<div style="display: flex" class="centerText" ;>
-    <div class="m1" th:each="day,iter : ${firstHalfWeek}">
-        <h3 th:text="${day}"></h3>
-        <div class="addBorderDiv">
-            <p class="recipeName" th:text="${recipes[iter.index].name}"></p>
-            <ul>
-                <li class="recipeIngredient" th:each="ingredient : ${recipes[iter.index].ingredients}"
-                    th:text="${ingredient.name + ' ' + ingredient.quantity + ' ' + ingredient.unit}">
-
-                </li>
-            </ul>
+    <div class="flexContainer">
+        <div class="flexBox my-1" th:each="day,iter : ${days}">
+            <div class="foodPlanCard" th:object="${recipes[iter.index]}">
+                <h1 th:text="${day}" style="text-align: center"></h1>
+                <p class="recipeName" th:text="*{name}"></p>
+                <ul>
+                    <li class="recipeIngredient" th:each="ingredient : *{ingredients}"
+                        th:text="${ingredient.name + ' ' + ingredient.quantity + ' ' + ingredient.unit}">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="flexBox my-1">
+            <div class="foodPlanCard">
+                <h1 style="text-align: center">
+                    Notes
+                </h1>
+            </div>
         </div>
     </div>
-</div>
-<div style="display: flex" class="centerText" ;>
-    <div class="m1" th:each="day,iter : ${lastHalfWeek}">
-        <h3 th:text="${day}"></h3>
-        <div class="addBorderDiv">
-            <p class="recipeName" th:text="${recipes[iter.index+3].name}"></p>
-            <ul>
-                <li class="recipeIngredient" th:each="ingredient : ${recipes[iter.index+3].ingredients}"
-                    th:text="${ingredient.name + ' ' + ingredient.quantity + ' ' + ingredient.unit}">
-
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="m1">
-        <h3>
-            Notes
-        </h3>
-        <div class="noteBorder">
-
-        </div>
-    </div>
-</div>
-
-
 
 </body>
 </html>

@@ -47,6 +47,7 @@ public class MyController {
         model.addAttribute("recipes", selectedRecipes);
         model.addAttribute("firstHalfWeek", days.subList(0, 4));
         model.addAttribute("lastHalfWeek", days.subList(4,7));
+        model.addAttribute("days", days);
         return "printFoodPlan";
     }
 

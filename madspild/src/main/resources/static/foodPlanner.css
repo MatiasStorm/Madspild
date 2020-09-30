@@ -28,3 +28,13 @@
     background-color: darkgrey;
     border-radius: 10px;
 }
+
+.flexContainer {
+    display: flex;
+    flex-flow: row wrap;
+    /* justify-content: space-around; */
+}
+
+.flexCol {
+
+}
