@@ -2,20 +2,24 @@ package com.example.demo.controllers;
 
 import com.example.demo.models.Recipe;
 import com.example.demo.models.Recipes;
+import com.example.demo.services.FoodPlanService;
 import com.example.demo.services.RecipeService;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import javax.servlet.http.HttpServletRequest;
+
 import java.util.ArrayList;
 
 @Controller
 public class MyController {
     Recipes recipes;
+    FoodPlanService foodPlanService = new FoodPlanService();
     RecipeService recipeService = new RecipeService();
-    String[] days = {"Mandag", "Tirsdag", "Onsdag", "Tordag", "Fredag", "Lørdag", "Søndag"};
+    String[] days = {"Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag", "Søndag"};
 
     @GetMapping("/")
     public String index(){
@@ -41,10 +45,12 @@ public class MyController {
             recipeNames[i] = recipeName;
         }
         ArrayList<Recipe> selectedRecipes = recipeService.getSelectedRecipes(recipeNames);
+        foodPlanService.createPdf(selectedRecipes, days);
         model.addAttribute("recipes", selectedRecipes);
         model.addAttribute("days", days);
         return "printFoodPlan";
     }
+
 
     @GetMapping("/foodwaste")
     public String foodwaste(){
