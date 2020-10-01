@@ -3,6 +3,8 @@
     width: 100%;
     height: 65px;
     vertical-align: middle;
+    display: relative;
+    transform: translate(0%, -20px);
 }
 
 .navbar a {
@@ -29,21 +31,21 @@
     color: moccasin;
 }
 
-.top-image {
-    max-height: 35vh;
+.topContainer{
+    position: relative;
+    text-align: center;
+}
+
+.topImage {
     width: 100%;
-    object-fit: cover;
-    margin: 0;
-    padding: 0;
 }
 
 #topPartText {
-    width: 100%;
-    text-align: center;
-    font-size: 6vw;
-    color: antiquewhite;
     position: absolute;
-    top: 5vh;
+    width: 100%;
+    font-size: 5vw;
+    color: antiquewhite;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;

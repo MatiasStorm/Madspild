@@ -12,7 +12,7 @@
 </head>
 <body>
 <div th:replace="/includes/topPart :: topPart"></div>
-<form th:action="@{/printFoodPlan}" method="post">
+<form target="_blank" th:action="@{/printFoodPlan}" method="post">
 
     <div th:each="day : ${days}" class="food-planner-input">
         <p th:text="${day}"></p>
