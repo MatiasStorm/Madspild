@@ -10,15 +10,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 @Controller
 public class MyController {
     Recipes recipes;
     RecipeService recipeService = new RecipeService();
-    ArrayList<String> days = new ArrayList(
-            Arrays.asList("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")
-    );
+    String[] days = {"Mandag", "Tirsdag", "Onsdag", "Tordag", "Fredag", "Lørdag", "Søndag"};
 
     @GetMapping("/")
     public String index(){
@@ -38,8 +35,8 @@ public class MyController {
         String recipeName;
         String[] recipeNames = new String[7];
         String day;
-        for (int i = 0; i < days.size(); i++) {
-            day = days.get(i);
+        for (int i = 0; i < days.length; i++) {
+            day = days[i];
             recipeName = request.getParameter(day);
             recipeNames[i] = recipeName;
         }
