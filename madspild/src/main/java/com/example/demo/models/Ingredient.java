@@ -11,6 +11,7 @@ public class Ingredient {
         this.unit = unit;
     }
 
+
     public String getName() {
         return name;
     }

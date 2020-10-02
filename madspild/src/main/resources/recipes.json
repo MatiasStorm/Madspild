@@ -4,7 +4,7 @@
             "name": "Lasagne",
             "ingredients": [
                 {
-                    "name": "Ground Beef",
+                    "name": "Hakket oksekød",
                     "quantity": 500,
                     "unit": "gram"
                 },
@@ -14,17 +14,17 @@
                     "unit": "gram"
                 },
                 {
-                    "name": "Onion",
+                    "name": "Løg",
                     "quantity": 2,
-                    "unit": "pieces"
+                    "unit": "stk"
                 },
                 {
-                    "name": "Copped tomatoes",
+                    "name": "Hakket tomater",
                     "quantity": 500,
                     "unit": "gram"
                 },
                 {
-                    "name": "Carrots",
+                    "name": "Gulerødder",
                     "quantity": 200,
                     "unit": "gram"
                 }
@@ -34,59 +34,74 @@
             "name": "Pizza",
             "ingredients": [
                 {
-                    "name": "Cheese",
+                    "name": "Ost",
+                    "quantity": 250,
+                    "unit": "gram"
+                },
+                {
+                    "name": "Tipo 00 hvedemel",
                     "quantity": 500,
                     "unit": "gram"
                 },
                 {
-                    "name": "Flour",
-                    "quantity": 500,
+                    "name": "Gær",
+                    "quantity": 25,
                     "unit": "gram"
                 },
                 {
-                    "name": "Onion",
-                    "quantity": 2,
-                    "unit": "pieces"
+                    "name": "Olivenolie",
+                    "quantity": 3,
+                    "unit": "spsk"
                 },
                 {
-                    "name": "Copped tomatoes",
-                    "quantity": 500,
-                    "unit": "gram"
+                    "name": "Hakkede tomater",
+                    "quantity": 1,
+                    "unit": "dåse"
                 },
                 {
-                    "name": "Carrots",
-                    "quantity": 200,
-                    "unit": "gram"
-                },
-                {
-                    "name": "Cucumber",
-                    "quantity": 200,
-                    "unit": "gram"
+                    "name": "Hvidløg",
+                    "quantity": 1,
+                    "unit": "fed"
                 }
             ]
         },
         {
-            "name": "Pie",
+            "name": "Tærte",
             "ingredients": [
                 {
-                    "name": "Cheese",
+                    "name": "Ost",
+                    "quantity": 300,
+                    "unit": "gram"
+                },
+                {
+                    "name": "Fuldkorns hvedemel",
                     "quantity": 500,
                     "unit": "gram"
                 },
                 {
-                    "name": "Copped tomatoes",
-                    "quantity": 500,
+                    "name": "Smør",
+                    "quantity": 100,
                     "unit": "gram"
                 },
                 {
-                    "name": "Carrots",
-                    "quantity": 200,
+                    "name": "Kartoffel",
+                    "quantity": 400,
                     "unit": "gram"
                 },
                 {
-                    "name": "Cucumber",
-                    "quantity": 200,
+                    "name": "Bacon",
+                    "quantity": 100,
                     "unit": "gram"
+                },
+                {
+                    "name": "Æg",
+                    "quantity": 2,
+                    "unit": "stk"
+                },
+                {
+                    "name": "Mælk",
+                    "quantity": 2,
+                    "unit": "dl"
                 }
             ]
         }
