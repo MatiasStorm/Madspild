@@ -11,9 +11,10 @@
 
 </head>
 <body>
+<!--Nav bar-->
 <div th:replace="/includes/topPart :: topPart"></div>
-<form target="_blank" th:action="@{/printFoodPlan}" method="post">
 
+<form target="_blank" th:action="@{/printFoodPlan}" method="post">
     <div th:each="day : ${days}" class="food-planner-input">
         <p th:text="${day}"></p>
         <div class="center">
@@ -26,20 +27,10 @@
     <div class="center m1">
         <input class="printButton" type="submit" value="Print din egen madplan"/>
     </div>
-
 </form>
 
-
-<!--<div th:each="recipe : ${recipes}">-->
-<!--    <p th:text="${recipe.name}"></p>-->
-<!--    <div th:each="ingredient : ${recipe.ingredients}">-->
-<!--        <p th:text="${ingredient.name}"></p>-->
-<!--        <p th:text="${ingredient.quantity}"></p>-->
-<!--        <p th:text="${ingredient.unit}"></p>-->
-<!--    </div>-->
-<!--</div>-->
-
-
+<!--Footer-->
 <footer th:replace="/includes/footer :: footer"></footer>
+
 </body>
 </html>
