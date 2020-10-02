@@ -18,23 +18,25 @@
 }
 
 .center {
-
     display: flex;
     justify-content: space-around;
 }
 
 .printButton {
     font-size: 1.5rem;
-    background-color: darkgrey;
+    color: black;
+    background-color: white;
     border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 4px 8px;
+}
+
+.printButton:hover {
+    background-color: #eee;
 }
 
 .flexContainer {
     display: flex;
     flex-flow: row wrap;
-    /* justify-content: space-around; */
-}
-
-.flexCol {
-
 }
