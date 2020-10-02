@@ -37,16 +37,21 @@ public class MyController {
         return "foodPlanner";
     }
 
-    @PostMapping("/printFoodPlan")
-    public String printFoodPlan(HttpServletRequest request, Model model) {
+    private String[] extractRecipeNames(HttpServletRequest request){
         String recipeName;
-        String[] recipeNames = new String[7];
+        String[] recipeNames = new String[days.length];
         String day;
         for (int i = 0; i < days.length; i++) {
             day = days[i];
             recipeName = request.getParameter(day);
             recipeNames[i] = recipeName;
         }
+        return recipeNames;
+    }
+
+    @PostMapping("/printFoodPlan")
+    public String printFoodPlan(HttpServletRequest request, Model model) {
+        String[] recipeNames = extractRecipeNames(request);
         ArrayList<Recipe> selectedRecipes = recipeService.getSelectedRecipes(recipeNames);
         foodPlanService.createPdf(selectedRecipes, days);
         model.addAttribute("recipes", selectedRecipes);
