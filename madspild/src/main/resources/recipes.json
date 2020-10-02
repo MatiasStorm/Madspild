@@ -104,6 +104,146 @@
                     "unit": "dl"
                 }
             ]
+        },
+        {
+            "name": "Torsk i fad",
+            "ingredients": [
+                {
+                    "name": "Torsk",
+                    "quantity": 600,
+                    "unit": "gram"
+                },
+                {
+                    "name": "Smør",
+                    "quantity": 15,
+                    "unit": "gram"
+                },
+                {
+                    "name": "Løg",
+                    "quantity": 1,
+                    "unit": "stk"
+                },
+                {
+                    "name": "Olivenolie",
+                    "quantity": 3,
+                    "unit": "spsk"
+                },
+                {
+                    "name": "Gulerødder",
+                    "quantity": 150,
+                    "unit": "gram"
+                },
+                {
+                    "name": "Madlavningsfløde 8%",
+                    "quantity": 3,
+                    "unit": "dl"
+                }
+            ]
+        },
+        {
+            "name": "Salsagryde",
+            "ingredients": [
+                {
+                    "name": "Blandede rodfrugter",
+                    "quantity": 500,
+                    "unit": "gram"
+                },
+                {
+                    "name": "Smør",
+                    "quantity": 25,
+                    "unit": "gram"
+                },
+                {
+                    "name": "Skinestrimler",
+                    "quantity": 400,
+                    "unit": "gram"
+                },
+                {
+                    "name": "Sojasauce",
+                    "quantity": 3,
+                    "unit": "spsk"
+                },
+                {
+                    "name": "Hot tacosauce",
+                    "quantity": 1,
+                    "unit": "dl"
+                }
+            ]
+        },
+        {
+            "name": "Chili con carne",
+            "ingredients": [
+                {
+                    "name": "Hakket oksekød",
+                    "quantity": 500,
+                    "unit": "gram"
+                },
+                {
+                    "name": "Løg",
+                    "quantity": 2,
+                    "unit": "stk"
+                },
+                {
+                    "name": "Hakket tomater",
+                    "quantity": 1,
+                    "unit": "dåse"
+                },
+                {
+                    "name": "Olivenolie",
+                    "quantity": 3,
+                    "unit": "spsk"
+                },
+                {
+                    "name": "Bønner i chilisauce",
+                    "quantity": 2,
+                    "unit": "dåse"
+                },
+                {
+                    "name": "Hvidløg",
+                    "quantity": 3,
+                    "unit": "fed"
+                },
+                {
+                    "name": "Chilifrugt",
+                    "quantity": 2,
+                    "unit": "stk"
+                }
+            ]
+        },
+        {
+            "name": "Brændenældesuppe",
+            "ingredients": [
+                {
+                    "name": "Smør",
+                    "quantity": 25,
+                    "unit": "gram"
+                },
+                {
+                    "name": "Løg",
+                    "quantity": 3,
+                    "unit": "stk"
+                },
+                {
+                    "name": "Brændenælder",
+                    "quantity": 30,
+                    "unit": "blade"
+                },
+                {
+                    "name": "Piskefløde 38%",
+                    "quantity": 1,
+                    "unit": "dl"
+                },
+                {
+                    "name": "Hakkede tomater",
+                    "quantity": 1,
+                    "unit": "dåse"
+                },
+                {
+                    "name": "Hvidløg",
+                    "quantity": 2,
+                    "unit": "fed"
+                }
+            ]
         }
     ]
 }
