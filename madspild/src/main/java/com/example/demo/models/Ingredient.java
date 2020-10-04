@@ -36,7 +36,7 @@ public class Ingredient {
         this.unit = unit;
     }
 
-    public String toString(){
+    public String toString() {
         return String.format("%s %s %s", name, quantity, unit);
     }
 

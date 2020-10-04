@@ -7,7 +7,7 @@
     font-size: 1rem;
 }
 
-.flexContainer{
+.flexContainer {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;

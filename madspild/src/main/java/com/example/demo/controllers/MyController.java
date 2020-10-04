@@ -25,19 +25,20 @@ public class MyController {
     String[] days = {"Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag", "Søndag"};
 
     @GetMapping("/")
-    public String index(){
+    public String index() {
         return "index";
 
     }
 
     @GetMapping("/foodPlanner")
-    public String foodPlanner(Model model){
+    public String foodPlanner(Model model) {
         model.addAttribute("recipes", recipeService.recipes.getListOfRecipes());
         model.addAttribute("days", days);
         return "foodPlanner";
     }
 
-    private String[] extractRecipeNames(HttpServletRequest request){
+    //    Help method for hhtp request
+    private String[] extractRecipeNames(HttpServletRequest request) {
         String recipeName;
         String[] recipeNames = new String[days.length];
         String day;
@@ -51,9 +52,11 @@ public class MyController {
 
     @PostMapping("/printFoodPlan")
     public String printFoodPlan(HttpServletRequest request, Model model) {
+        //Sætter et ArrayList = inputten fra brugeren
         String[] recipeNames = extractRecipeNames(request);
+        //Kalder metoden get selected recipes og returnere en ArrayList
+        // med alle recipe der korronsponderer med de input brugeren har lavet.
         ArrayList<Recipe> selectedRecipes = recipeService.getSelectedRecipes(recipeNames);
-        foodPlanService.createPdf(selectedRecipes, days);
         model.addAttribute("recipes", selectedRecipes);
         model.addAttribute("days", days);
         return "printFoodPlan";
@@ -61,12 +64,13 @@ public class MyController {
 
 
     @GetMapping("/foodwaste")
-    public String foodwaste(){
+    public String foodwaste() {
         return "foodwaste";
 
     }
+
     @GetMapping("/organisation")
-    public String organisation(){
+    public String organisation() {
         return "organisation";
     }
 }

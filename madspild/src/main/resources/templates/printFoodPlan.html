@@ -11,26 +11,26 @@
 </head>
 <body>
 
-    <div class="flexContainer">
-        <div class="flexBox my-1" th:each="day,iter : ${days}">
-            <div class="foodPlanCard" th:object="${recipes[iter.index]}">
-                <h1 th:text="${day}" style="text-align: center"></h1>
-                <p class="recipeName" th:text="*{name}"></p>
-                <ul>
-                    <li class="recipeIngredient" th:each="ingredient : *{ingredients}"
-                        th:text="${ingredient.name + ' ' + ingredient.quantity + ' ' + ingredient.unit}">
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="flexBox my-1">
-            <div class="foodPlanCard">
-                <h1 style="text-align: center">
-                    Notes
-                </h1>
-            </div>
+<div class="flexContainer">
+    <div class="flexBox my-1" th:each="day,iter : ${days}">
+        <div class="foodPlanCard" th:object="${recipes[iter.index]}">
+            <h1 th:text="${day}" style="text-align: center"></h1>
+            <p class="recipeName" th:text="*{name}"></p>
+            <ul>
+                <li class="recipeIngredient" th:each="ingredient : *{ingredients}"
+                    th:text="${ingredient.name + ' ' + ingredient.quantity + ' ' + ingredient.unit}">
+                </li>
+            </ul>
         </div>
     </div>
+    <div class="flexBox my-1">
+        <div class="foodPlanCard">
+            <h1 style="text-align: center">
+                Notes
+            </h1>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>

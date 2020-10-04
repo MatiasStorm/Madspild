@@ -6,11 +6,11 @@ public class Recipe {
     String name;
     ArrayList<Ingredient> ingredients = new ArrayList<>();
 
-    public Recipe(String name){
+    public Recipe(String name) {
         this.name = name;
     }
 
-    public void addIngredient(Ingredient i){
+    public void addIngredient(Ingredient i) {
         ingredients.add(i);
     }
 
@@ -30,9 +30,9 @@ public class Recipe {
         this.ingredients = ingredients;
     }
 
-    public String toString(){
+    public String toString() {
         String result = name + "\n";
-        for(Ingredient i : ingredients){
+        for (Ingredient i : ingredients) {
             result += i + "\n";
         }
         return result;
