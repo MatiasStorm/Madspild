@@ -2,7 +2,6 @@ package com.example.demo.controllers;
 
 import com.example.demo.models.Recipe;
 import com.example.demo.models.Recipes;
-import com.example.demo.services.FoodPlanService;
 import com.example.demo.services.RecipeService;
 
 import org.springframework.core.io.FileSystemResource;
@@ -20,7 +19,6 @@ import java.util.ArrayList;
 @Controller
 public class MyController {
     Recipes recipes;
-    FoodPlanService foodPlanService = new FoodPlanService();
     RecipeService recipeService = new RecipeService();
     String[] days = {"Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag", "Søndag"};
 
