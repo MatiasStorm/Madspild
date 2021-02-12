@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Foodwaste</title>
+    <link rel="stylesheet" type="text/css" href="/main.css">
+    <link rel="stylesheet" type="text/css" href="/topPart.css">
+    <link rel="stylesheet" type="text/css" href="/footer.css">
+
+
+</head>
+<body>
+<div th:replace="/includes/topPart :: topPart"></div>
+<h2 class="indexHeaders">Hvad er madspild?</h2>
+<div class="indexBoxes">
+    <div>
+        <p>Definition af madspild:
+            Madaffald er alt affald, der stammer fra mad. Madaffald kan opdeles i to: madspild og øvrigt madaffald.
+            Madspild er fødevarer, der kunne være spist, men i stedet er blevet smidt ud. Øvrigt madaffald er de dele af
+            fødevarerne, der ikke er egnet til at spise. Eksempler på madspild er brød, hel frugt og grønt og
+            middagsrester. Eksempler på øvrigt madaffald er æggeskaller, osteskorper, kaffegrums og kernehuse.
+            kilde: Miljøstyrelsen, rapporten ”Kortlægning af madaffald i servicesektoren – Detailhandel, restauranter og
+            storkøkkener” – tal fra 2014</p>
+        <p>Samlet smider vi i Danmark hvert år over 700.000 ton mad ud, som kunne være spist. Husholdningernes madspild
+            udgør 260.000 ton pr. år. I servicesektoren er der et årligt madspild på 227.000 ton, heraf 163.000 ton fra
+            detailhandlen, 29.000 ton fra hoteller og restauranter og 31.000 ton fra institutioner og storkøkkener om
+            året. Madspild fra primærproduktionen udgør 100.000 ton pr. år, mens fødevareindustrien står for et årligt
+            madspild på 133.000 ton.
+            kilde: Miljøministeriet, Regeringens Strategi for affaldsforebyggelse ”Danmark uden affald II” - tal fra
+            2015 </p>
+
+        <p>Madspild koster danske husholdninger 13,5 milliarder kroner om året inkl. moms og afgifter.
+            kilde: Landbrug & Fødevarer - tal fra 2016</p>
+    </div>
+    <div>
+        <img class="indexSplitImage" src="/images/indexSplit.png"/>
+    </div>
+</div>
+
+
+<h2 class="indexHeaders">Årlige madspild i Danmark i kroner</h2>
+<div class="indexBoxes">
+    <div>
+        <img class="indexSplitImage" src="/images/indexSplitTwo.png"/>
+    </div>
+    <div>
+        <p>Det største spild af korn, mel og brød sker i detailhandlen (150 mio. kr.) efterfulgt af storkøkkener (110
+            mio. kr.).
+            Det største spild af frugt og grønt sker i detailhandlen (428 mio. kr.) efterfulgt af primærproduktionen
+            (311 mio. kr.).
+            Det største spild af mælk, æg og mejeriprodukter sker i fødevareindustrien (202 mio. kr.) efterfulgt af
+            storkøkkener (108 mio. kr.).
+            Det største spild af kød sker i fødevareindustrien (411 mio. kr.) efterfulgt af
+            storkøkkener (90 mio. kr.) og detailhandlen (73 mio. kr.).
+            Hertil kommer værdien af madspild fra andre fødevarekategorier, som ikke er opgjort (fisk, sukkervarer,
+            krydderier og øvrige ingredienser), som vurderes at udgøre op mod 1 mia. kr. årligt, heraf formentlig ca.
+            halvdelen i husholdningerne.
+            kilder: Jordbrugsvidenskabelige Fakultet ved Aarhus Universitet (DJF) og Fødevareøkonomisk Institut ved
+            Københavns Universitet (FOI) - fra Fødevareministeriets konference 'Det skjulte madspild' i 2011</p>
+
+    </div>
+
+</div>
+
+
+<footer th:replace="/includes/footer :: footer"></footer>
+</body>
+</html>

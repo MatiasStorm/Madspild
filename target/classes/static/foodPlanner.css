@@ -1,0 +1,42 @@
+.food-planner-input {
+    margin-top: 15px;
+    align-content: center;
+}
+
+.food-planner-input select {
+    font-size: 1.5rem;
+    min-width: 150px;
+    width: 50%;
+    text-align: center;
+}
+
+.food-planner-input p {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.center {
+    display: flex;
+    justify-content: space-around;
+}
+
+.printButton {
+    font-size: 1.5rem;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 4px 8px;
+}
+
+.printButton:hover {
+    background-color: #eee;
+}
+
+.flexContainer {
+    display: flex;
+    flex-flow: row wrap;
+}

@@ -1,0 +1,37 @@
+.recipeName {
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+.recipeIngredient {
+    font-size: 1rem;
+}
+
+.flexContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.flexBox {
+    flex: 1 1 20%;
+    margin: 2rem 0.5%;
+}
+
+.foodPlanCard {
+    border-style: solid;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px black;
+    height: 100%;
+}
+
+.foodPlanCard ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+.foodPlanCard ul li {
+    font-size: 20px;
+}
